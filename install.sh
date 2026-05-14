@@ -2,7 +2,7 @@
 
 # --- 1. KONFIGURACJA ---
 clear
-echo "=== ARCH PANCERNY INSTALLER (Secure Boot + zRAM + AUR + Power) ==="
+echo "=== ARCH  BY RUNNER INSTALLER (Secure Boot + zRAM + AUR + Power) ==="
 echo "-------------------------------------------------------------------"
 
 lsblk -dno NAME,SIZE,MODEL | grep -v "loop"
