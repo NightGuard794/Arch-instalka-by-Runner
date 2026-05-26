@@ -53,7 +53,7 @@ pacstrap /mnt $PKGS
 genfstab -U /mnt >> /mnt/etc/fstab
 
 # --- 6. CHROOT ---
-arch-chroot /mnt /bin/bash <<EOF
+arch-chroot /mnt /bin/bash <<"EOF"
 ln -sf /usr/share/zoneinfo/Europe/Warsaw /etc/localtime
 hwclock --systohc
 echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen
@@ -78,7 +78,7 @@ sbctl sign -s /boot/vmlinuz-linux
 # --- 7. AUR (YAY & PARU) ---
 useradd -m -G wheel builder
 echo "builder ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
-sudo -u builder bash <<AUR
+sudo -u builder bash <<"AUR"
 cd /home/builder
 git clone https://aur.archlinux.org/yay-bin.git
 cd yay-bin && makepkg -si --noconfirm
