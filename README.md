@@ -1,4 +1,4 @@
-**root password - 1234**
+<pre><h3>**root password - 1234**</h3></pre>
 
 installka archa zrobiona przez gemini
 co robi:
@@ -8,7 +8,8 @@ NIE pobiera DE
 pobiera AUR helpery: yay i paru 
 robi secure boot
 partycja boot - 1GB i roota - reszta 
-a i usuwa cały dysk i nie pod dualboota **pozdro**
+
+a i usuwa cały **dysk**
 
 **użytkowanie**
 
