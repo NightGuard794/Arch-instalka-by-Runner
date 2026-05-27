@@ -12,7 +12,10 @@ a i usuwa cały dysk i nie pod dualboota **pozdro**
 
 **użytkowanie**
 
+```bash
 curl -L -O https://raw.githubusercontent.com/NightGuard794/Arch-instalka-by-Runner/main/install.sh && chmod +x install.sh && ./install.sh
+```
+
 
 
 czemu to zrobiłem?
