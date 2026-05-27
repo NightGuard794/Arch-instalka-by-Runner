@@ -1,4 +1,4 @@
-root password - 1234
+**root password - 1234**
 
 installka archa zrobiona przez gemini
 co robi:
@@ -9,7 +9,8 @@ pobiera AUR helpery: yay i paru
 robi secure boot
 partycja boot - 1GB i roota - reszta 
 a i usuwa cały dysk i nie pod dualboota **pozdro**
-użytkowanie
+
+**użytkowanie**
 
 curl -L -O https://raw.githubusercontent.com/NightGuard794/Arch-instalka-by-Runner/main/install.sh && chmod +x install.sh && ./install.sh
 
