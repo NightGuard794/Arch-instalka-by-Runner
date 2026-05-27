@@ -1,4 +1,4 @@
-<h3>**root password - 1234**</h3>
+<h3>root password - 1234</h3>
 
 installka archa zrobiona przez gemini
 co robi:
