@@ -44,6 +44,18 @@ mkdir -p /mnt/boot/efi
 mount $PART_BOOT /mnt/boot/efi
 
 # --- 5. INSTALACJA (Dodano: NTFS, Power, Microcode) ---
+# 1. Upewnienie się, że bazy danych pacmana są aktualne na LiveUSB
+echo "Odświeżam bazy danych pacmana..."
+pacman -Sy --noconfirm
+
+# 2. Aktualizacja kluczy Arch Linux (bardzo ważne na starszych ISO!)
+echo "Aktualizuję kluczyki Arch..."
+pacman -S --noconfirm archlinux-keyring
+
+# 3. Dopiero teraz bezpieczny pacstrap
+echo "Instaluję system i sterowniki..."
+pacstrap /mnt base linux linux-firmware nano grub efibootmgr nvidia nvidia-utils
+
 PKGS="base linux linux-firmware $CPU_UCODE sof-firmware sudo base-devel grub efibootmgr nano networkmanager zram-generator sbctl pacman-contrib git ntfs-3g exfatprogs dosfstools tlp power-profiles-daemon acpi acpi_call"
 
 if [ "$GPU_CHOICE" == "1" ]; then PKGS="$PKGS nvidia nvidia-utils nvidia-settings"; fi
