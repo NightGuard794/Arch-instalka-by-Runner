@@ -1,6 +1,8 @@
 # Arch-instalka--by-Runner
 <h3>root password - 1234</h3>
 
+<h3>usuwa cały dysk</h3>
+
 installka archa zrobiona przez gemini
 co robi:
 pozwala wybrać czy ma się AMD czy NVIDIa i pobrac do nich sterowniki
@@ -10,7 +12,7 @@ pobiera AUR helpery: yay i paru
 robi secure boot
 partycja boot - 1GB i roota - reszta 
 
-a i usuwa cały **dysk**
+
 
 **użytkowanie**
 
