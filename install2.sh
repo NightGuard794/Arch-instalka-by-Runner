@@ -210,12 +210,19 @@ grub-mkconfig -o /boot/grub/grub.cfg
 sed -i 's/^#ParallelDownloads = 5/ParallelDownloads = 5/' /etc/pacman.conf
 
 # ---- budowa yay jako user 'user' -----------------------------------------------
+# UWAGA: sudo w tym miejscu nie ma dostępu do terminala żeby zapytać o hasło,
+# więc na czas budowy dajemy userowi tymczasowe NOPASSWD, a zaraz po - zdejmujemy
+echo "user ALL=(ALL) NOPASSWD: ALL" > /etc/sudoers.d/temp-yay-build
+chmod 440 /etc/sudoers.d/temp-yay-build
+
 su - user -c "
     cd /home/user &&
     git clone https://aur.archlinux.org/yay.git &&
     cd yay &&
     makepkg -si --noconfirm
 "
+
+rm -f /etc/sudoers.d/temp-yay-build
 
 # ---- sprzątanie: usunięcie tymczasowego konta 'user' -----------------------------
 # było potrzebne tylko do zbudowania yay (AUR nie buduje się jako root)
