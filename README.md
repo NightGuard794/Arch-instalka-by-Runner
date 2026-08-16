@@ -3,9 +3,9 @@
 
 <h3>usuwa cały dysk</h3>
 
-installka archa zrobiona przez gemini
+installka archa zrobiona przez cloude
 co robi:
-pozwala wybrać czy ma się AMD czy NVIDIa i pobrac do nich sterowniki
+wybiera sama sterowniki nvidia czy amd lub mesa jezeli nie wykryje
 pobiera z-ram zamiast robić swap
 NIE pobiera DE 
 pobiera AUR helpery: yay i paru 
