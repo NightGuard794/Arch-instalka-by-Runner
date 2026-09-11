@@ -234,4 +234,4 @@ EOF
 # Koniec
 # ==============================================================================
 info "Instalacja zakończona!"
-info "Teraz możesz zrobić: umount -R /mnt && reboot"
+info "Teraz możesz zrobić: umount -R /mnt && reboot
